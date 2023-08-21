@@ -136,7 +136,7 @@ se mantienen las siguientes relaciones:
 \[\vb{A\times B}\equiv AB\sin\theta\vb{\hat n}\]
 
 \newpage
-\[\text{Propiedad distributiva en el producto punto}\]
+\[\text{Propiedad distributiva en el producto escalar}\]
 
 \[\vec A\cdot(\vec B+\vec C)=\vec A\cdot\vec B+\vec A\cdot\vec C\quad?\]\\
 
@@ -176,7 +176,7 @@ se mantienen las siguientes relaciones:
 
 \[\vec B+\vec C=(b_x+c_x)\hat\imath+(b_y+c_y)\hat\jmath+(b_z+c_z)\hat k\]\\
 
-\[\text{Propiedad distributiva en el producto punto}\]
+\[\text{Propiedad distributiva en el producto escalar}\]
 
 \[\boxed{\vec A\cdot(\vec B+\vec C)=a_x(b_x+c_x)+a_y(b_y+c_y)+a_z(b_z+c_z)}\]
 
@@ -344,7 +344,7 @@ diagonales aquellos vectores $\vec A$ de $(0,0,0)$ a $(a,a,a)$, y $\vec B$ de $(
 
 \[B=|\vec B|=\sqrt{a^2+a^2+(-a)^2}=\sqrt{3}a\]
 
-\[\text{Producto punto}\]
+\[\text{Producto escalar}\]
 
 \[\vec A\cdot\vec B=a^2+a^2-a^2=a^2\]
 
@@ -626,22 +626,304 @@ is clockwise as you look down the axis toward the origin.
   \end{pmatrix}}\]
 
 \newpage
+\textbf{Problem 1.10}\\
+
+(a) How do the components of a vector$^5$ transform under a \textbf{translation} of
+coordinates $(\mybar{1.0}{0pt}{x}=x,\mybar{1.0}{0pt}{y}=y-a,\mybar{1.0}{0pt}{z}=z$, Fig. 1.16a)?\\
+
+(b) How do the components of a vector transform under an \textbf{inversion} of coordinates
+$(\mybar{1.0}{0pt}{x}=-x,\mybar{1.0}{0pt}{y}=-y,\mybar{1.0}{0pt}{z}=-z$, Fig. 1.16b)?\\
+
+(c) How do the components of a cross product (Eq. 1.13) transform under
+inversion? [The cross-product of two vectors is properly called a \textbf{pseudovector}
+  because of this ``anomalous'' behavoir.] Is the croos product of two pseudovectors
+a vector, or a pseudovector? Name two pseudovector quantities in
+classical mechanics.\\
+
+(d) How does the scalar triple product of three vectors transform under
+inversions? (Such an object is called a \textbf{pseudoscalar.})\\\\\\\\\\\\\\
+
+\begin{center}
+  \begin{tikzpicture}
+    \coordinate (O) at (0,0);
+    \coordinate (Y) at (2,0);
+    \coordinate (Z) at (0,2);
+    \coordinate (X) at ({-1.5*cos(45)},{-1.5*sin(45)});
+
+    \coordinate (O') at (0.8,0.1);
+    \coordinate (Y') at (2.8,0.1);
+    \coordinate (Z') at (0.8,2.1);
+    \coordinate (X') at ({-1.5*cos(45)+0.8},{-1.5*sin(45)+0.1});
+
+    \coordinate (Op) at (8,0);
+    \coordinate (Yp) at (10,0);
+    \coordinate (Zp) at (8,1.5);
+    \coordinate (Xp) at ({-1.5*cos(45)+8},{-1.5*sin(45)});
+
+    \coordinate (Op') at (7.9,0);
+    \coordinate (Yp') at (5.9,0);
+    \coordinate (Zp') at (7.9,-1.5);
+    \coordinate (Xp') at ({1.5*cos(45)+7.9},{1.5*sin(45)});
+    
+    \draw[->](O)--(Y) node[below]{$y$};
+    \draw[->](O)--(Z) node[left]{$z$};
+    \draw[->](O)--(X) node[left]{$x$};
+
+    \draw[->](O')--(Y') node[above]{$\mybar{1.0}{0pt}{y}$};
+    \draw[->](O')--(Z') node[left]{$\mybar{1.0}{0pt}{z}$};
+    \draw[->](O')--(X') node[left]{$\mybar{1.0}{0pt}{x}$};
+
+    \node[draw=none] at (2.5,-1.5){(a)};
+
+    \draw[decorate,decoration={brace,amplitude=5pt}] (0,0)--(0.8,0) node[midway,above=3]{$a$};
+
+    \draw[->](Op)--(Yp) node[above]{$y$};
+    \draw[->](Op)--(Zp) node[left]{$z$};
+    \draw[->](Op)--(Xp) node[left]{$x$};
+
+    \draw[->](Op')--(Yp') node[above]{$\mybar{1.0}{0pt}{y}$};
+    \draw[->](Op')--(Zp') node[left]{$\mybar{1.0}{0pt}{z}$};
+    \draw[->](Op')--(Xp') node[left]{$\mybar{1.0}{0pt}{x}$};
+
+    \node[draw=none] at (9.5,-1.5){(b)};
+    
+  \end{tikzpicture}
+\end{center}
+\[\textbf{FIGURE 1.16}\]
+
+\hline
+\hline.\\
+
+$^5$\emph{Beware:} The vector $\vb{r}$ (Eq. 1.19) goes from a specific point in space (the
+origin, $\mathcal{O}$) to the point $P=(x,y,z)$. Under translations the \emph{new} origin $(\bar{\mathcal{O}})$
+is at a different location, and the arrow from $\bar{\mathcal{O}}$ to $P$ is a completely different
+vector. The original vector $\vb{r}$ still goes from $\mathcal{O}$ to $P$, regardless of
+the coordinates used to label these points.
+
+\newpage
+\begin{center}
+  \fbox{\begin{minipage}{17cm}
+      1.10 (a)\\
+      Si ocurre una traslación del vector $\vec A$ a otro origen, las componentes en la nueva
+      base no cambian:
+      \[\vec A'\to\vec A\]
+      \[\bar A_x=A_x\quad,\quad\bar A_y=A_y\quad,\quad\bar A_z=A_z\]
+      \end{minipage}}
+\end{center}
+
+\begin{center}
+  \fbox{\begin{minipage}{17cm}
+      1.10 (b)\\
+      En el caso de una inversión, el sentido del vector se invierte al opuesto del
+      original, lo que equivale a multiplicarlo por $(-1)$:
+      \[\vec A'\to -\vec A\]
+      \[\bar A_x=-A_x\quad,\quad\bar A_y=-A_y\quad,\quad\bar A_z=-A_z\]
+      \end{minipage}}
+\end{center}.\\
+
+\[\text{Ecuación 1.13}\]
+
+\[\vb{A\times B}=(A_x\vb{\hat x}+A_y\vb{\hat y}+A_z\vb{\hat z})\times(B_x\vb{\hat x}+B_y\vb{\hat y}+B_z\vb{\hat z})\]
+\[=(A_yB_z-A_zB_y)\vb{\hat x}+(A_zB_x-A_xB_z)\vb{\hat y}+(A_xB_y-A_yB_x)\vb{\hat z}\]
+
+\[\text{Inversión}\]
+
+\[\vec A'\to -\vec A\quad,\quad\vec B'\to -\vec B\]
+
+\[\vec C=\vec A\times\vec B\]
+
+\[\vec C'=\vec A'\times\vec B'=(-\vec A)\times(-\vec B)=\vec A\times\vec B\]
+
+\[\therefore\quad\vec C'\to\vec C\]
+
+\begin{center}
+\end{center}
+
+\begin{center}
+  \fbox{\begin{minipage}{17cm}
+      1.10 (c)\\
+      En el caso de una transformación por inversión, tenemos que para el vector
+      resultante del producto vectorial de dos vectores ($\vec C=\vec A\times\vec B$) no ocurre inversión,
+      sus componentes permanecen iguales, por ello se considera un pseudovector.
+      \end{minipage}}
+\end{center}
+
+\newpage
+\[\text{Tomamos a $\vec A$ y $\vec B$ como pseudovectores}\]
+
+\[\vec A'\to\vec A\quad,\quad\vec B'\to\vec B\]
+
+\[\vec C=\vec A\times\vec B\]
+
+\[\vec C'=\vec A'\times\vec B'=(\vec A)\times(\vec B)=\vec A\times\vec B\]
+
+\[\therefore\quad\vec C'\to\vec C\]
+
+\begin{center}
+  \fbox{\begin{minipage}{18cm}
+      1.10 (c)\\
+      En el caso de una transformación por inversión, tenemos que para el vector
+      resultante del producto vectorial de dos pseudovectores ($\vec C=\vec A\times\vec B$) no ocurre
+      inversión, sus componentes permanecen iguales, por ello se considera un pseudovector.
+      \end{minipage}}
+\end{center}.\\
+
+\[\text{Tomamos a $\vec A$ como pseudovector}\]
+
+\[\vec A'\to\vec A\quad,\quad\vec B'\to -\vec B\]
+
+\[\vec C=\vec A\times\vec B\]
+
+\[\vec C'=\vec A'\times\vec B'=(\vec A)\times(-\vec B)=-\vec A\times\vec B\]
+
+\[\therefore\quad\vec C'\to -\vec C\]
+
+\begin{center}
+  \fbox{\begin{minipage}{18cm}
+      1.10 (c)\\
+      En el caso de una transformación por inversión, tenemos que para el vector
+      resultante del producto vectorial de un vector y un pseudovector ($\vec C=\vec A\times\vec B$) ocurre inversión,
+      por ello se considera un vector ``ordinario''.
+      \end{minipage}}
+\end{center}
+
+\newpage
+\begin{center}
+  \fbox{\begin{minipage}{14cm}
+      1.10 (c)\\
+      \[\text{Ejemplos de pseudovectores en la mecánica clásica:}\]
+      
+      \[\text{Momento angular:}\quad\vec L=\vec r\times\vec p\]
+      \[\text{Momento de torsión:}\quad\vec M=\vec r\times\vec F\]\\
+      
+      \end{minipage}}
+\end{center}.\\
+
+\[\text{Triple producto escalar}\]
+
+\[c=\vec A\cdot(\vec B\times\vec C)\]
+
+\[c'=\vec A'\cdot(\vec B'\times\vec C')=(-\vec A)\cdot[(-\vec B)\times(-\vec C)]=-\vec A\cdot(\vec B\times\vec C)=c\]
+
+\[\therefore\quad c'\to -c\]
+
+\begin{center}
+  \fbox{\begin{minipage}{18cm}
+      1.10 (d)\\
+      En el caso de una transformación por inversión, el pseudoescalar resultante del producto triple
+      producto escalar de tres vectores ($c=\vec A\cdot(\vec B\times\vec C)$) invierte su signo.
+      \end{minipage}}
+\end{center}
+
+\newpage
+\textbf{Problem 1.11} Find the gradients of the following functions:\\
+
+(a) $f(x,y,z)=x^2+y^3+z^4$.\\
+
+(b) $f(x,y,z)=x^2y^3z^4$.\\
+
+(c) $f(x,y,z)=e^x\sin(y)\ln(z)$.
+
+\newpage
+\[\text{Gradiente de una función}\]
+
+\[\nabla f(x,y,z)=\frac{\partial f}{\partial x}\hat\imath+\frac{\partial f}{\partial y}\hat\jmath+\frac{\partial f}{\partial z}\hat k\]\\
+
+\[f(x,y,z)=x^2+y^3+z^4\quad\to\quad
+\frac{\partial f}{\partial x}=2x\quad,\quad
+\frac{\partial f}{\partial y}=3y^2\quad,\quad
+\frac{\partial f}{\partial z}=4z^3\]\\
+
+\[\boxed{\text{1.11 (a)}\quad\nabla f=2x\hat\imath+3y^2\hat\jmath+4z^3\hat k}\]\\
+
+\[f(x,y,z)=x^2y^3z^4\quad\to\quad
+\frac{\partial f}{\partial x}=2xy^3z^4\quad,\quad
+\frac{\partial f}{\partial y}=3x^2y^2z^4\quad,\quad
+\frac{\partial f}{\partial z}=4x^2y^3z^3\]\\
+
+\[\boxed{\text{1.11 (b)}\quad\nabla f=2xy^3z^4\hat\imath+3x^2y^2z^4\hat\jmath+4x^2y^3z^3\hat k}\]\\
+
+\[f(x,y,z)=e^x\sin y\ln z\]
+
+\[\frac{\partial f}{\partial x}=e^x\sin y\ln z\quad,\quad
+\frac{\partial f}{\partial y}=-e^x\cos y\ln z\quad,\quad
+\frac{\partial f}{\partial z}=\frac{1}{z}e^x\sin y\]\\
+
+\[\boxed{\text{1.11 (c)}\quad\nabla f=e^x\sin y\ln z\hat\imath-e^x\cos y\ln z\hat\jmath+\frac{1}{z}e^x\sin y\hat k}\]
+
+\newpage
+\textbf{Problem 1.12} The height of a certain hill (in feet) is given by
+
+\[h(x,y)=10(2xy-3x^2-4y^2-18x+28y+12),\]
+
+where $y$ is the distance (in miles) north, x the distance east of South Hadley.\\
+
+(a) Where is the top of the hill located?\\
+
+(b) How high is the hill?\\
+
+(c) How steep is the slope (in feet per mile) at a point 1 mile north and one
+mile east of South Hadley? In what direction is the slope steepest, at that
+point?
+
+\newpage
+\[\text{Punto critico}\]
+
+\[\nabla f=\vec 0\quad\to\qua|\nabla f|=0\]\\
+
+\[h(x,y)=10(2xy-3x^2-4y^2-18x+28y+12)\]\\
+
+\[\frac{\partial h}{\partial x}=10(2y-6x-18)\quad,\quad
+\frac{\partial h}{\partial y}=10(2x-8y+28)\]\\
+
+\[\therefore\quad\nabla h(x,y)=10(2y-6x-18)\hat\imath+10(2x-8y+28)\hat\jmath\]\\
+
+\[\nabla h=\vec 0=0\hat\imath+0\hat\jmath\]
+
+\[10(2y-6x-18)=0\quad,\quad 10(2x-8y+28)=0\]\\
+
+\[y-3x=9\quad,\quad x-4y=-14\]
+
+\[y=3x+9\quad\to\quad x-4(3x+9)=-14\quad\to\quad -11x=22\quad\to\quad x=-2\]
+
+\[y=3(-2)+9=3\]
+
+\begin{center}
+  \fbox{\begin{minipage}{15cm}
+      1.12 (a)
+      \[x=-2\quad,\quad y=3\]
+      La cima se encuentra 3 millas al norte y 2 al oeste de South Hadley.
+      \end{minipage}}
+\end{center}
 
 \newpage
 
-\newpage
+\[h(-2,3)=10[2(-2)(3)-3(-2)^2-4(3)^2-18(-2)+28(3)+12]=720\]\\
 
-\newpage
+\begin{center}
+  \fbox{\begin{minipage}{8cm}
+      1.12 (b)
+      \[h(-2,3)=720\quad\to\quad h=720\text{ft}\]
+      La altura en la cima es de 720 pies.
+      \end{minipage}}
+\end{center}.\\\\
 
-\newpage
+\[\nabla h(1,1)=
+10[2(1)-6(1)-18]\hat\imath+10[2(1)-8(1)+28]\hat\jmath=
+10[2-6-18]\hat\imath+10[2-8+28]\hat\jmath\]
 
-\newpage
+\[\boxed{\nabla h(1,1)=-220\hat\imath+220\hat\jmath}\]\\
 
-\newpage
+\[|\nabla h(1,1)|=\sqrt{(-220)^2+(220)^2}=\sqrt{2(220)^2}\]
 
-\newpage
+\[\boxed{|\nabla h(1,1)|=220\sqrt{2}\approx 311.127}\]
 
-\newpage
+\begin{center}
+  \fbox{\begin{minipage}{17cm}
+      1.12 (c) La pendiente a una milla al norte y una al este de South Hadley es de
+      aproximadamente $311.127\frac{\text{ft}}{\text{milla}}$ (pies por milla), en dirección noroeste.
+      \end{minipage}}
+\end{center}
 
 \newpage
 
