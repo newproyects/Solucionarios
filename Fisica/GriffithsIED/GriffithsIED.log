@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.5.29)  20 AUG 2023 14:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.5.29)  18 SEP 2023 23:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1633,14 +1633,278 @@ Overfull \hbox (18.46559pt too wide) in paragraph at lines 925--926
  [] 
  []
 
-[36] (./GriffithsIED.aux)
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 929--931
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--933
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 934--935
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 943--944
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 945--946
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 947--948
+
+ []
+
+
+Overfull \hbox (17.15277pt too wide) detected at line 951
+\OMS/cmsy/m/n/14.4 r\OT1/cmr/m/n/14.4 ([][]) = 2(\OML/cmm/m/it/14.4 x \OMS/cmsy
+/m/n/14.4 ^^@ \OML/cmm/m/it/14.4 x[]\OT1/cmr/m/n/14.4 )[] + 2(\OML/cmm/m/it/14.
+4 y \OMS/cmsy/m/n/14.4 ^^@ \OML/cmm/m/it/14.4 y[]\OT1/cmr/m/n/14.4 )[] + 2(\OML
+/cmm/m/it/14.4 z \OMS/cmsy/m/n/14.4 ^^@ \OML/cmm/m/it/14.4 z[]\OT1/cmr/m/n/14.4
+ )[] = 2 []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 951--952
+
+ []
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 956--957
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 961--962
+
+ []
+
+
+Overfull \hbox (51.26286pt too wide) detected at line 965
+\OMS/cmsy/m/n/14.4 ^^@[] [][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 965--966
+
+ []
+
+
+Overfull \hbox (50.52554pt too wide) detected at line 969
+\OMS/cmsy/m/n/14.4 r [] \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@ [][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--970
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 974--975
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 976--977
+
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 981--982
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 986--987
+
+ []
+
+
+Overfull \hbox (47.3867pt too wide) detected at line 990
+[] [][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 990--991
+
+ []
+
+
+Overfull \hbox (45.16814pt too wide) detected at line 992
+\OMS/cmsy/m/n/14.4 r\OT1/cmr/m/n/14.4 ([][]) = \OML/cmm/m/it/14.4 n [][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 992--993
+
+ []
+
+
+Overfull \hbox (57.99109pt too wide) detected at line 994
+\OMS/cmsy/m/n/14.4 r\OT1/cmr/m/n/14.4 ([][]) = \OML/cmm/m/it/14.4 n [][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 994--995
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--997
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--999
+
+ []
+
+[40] [41]
+Underfull \hbox (badness 10000) in paragraph at lines 1024--1025
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1028
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1035--1036
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1044
+
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 1047--1048
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1052
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1056
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1059--1060
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1066
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 1085--1086
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1087--1088
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1089--1090
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1097
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1103--1104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1111
+
+ []
+
+[45] [46]
+Underfull \hbox (badness 10000) in paragraph at lines 1131--1132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1136--1137
+
+ []
+
+
+Overfull \hbox (15.64925pt too wide) detected at line 1141
+\OMS/cmsy/m/n/14.4 r ^^A [] \OT1/cmr/m/n/14.4 = [] [] + [] [] + [] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1141--1142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1144--1145
+
+ []
+
+
+Overfull \hbox (45.50027pt too wide) detected at line 1147
+\U/msa/m/n/14.4 )  \OMS/cmsy/m/n/14.4 r ^^A [] \OT1/cmr/m/n/14.4 = 3(\OML/cmm/m
+/it/14.4 x[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 y[] \OT1/cmr/m/n/14.4 + \OM
+L/cmm/m/it/14.4 z[]\OT1/cmr/m/n/14.4 )[] \OMS/cmsy/m/n/14.4 ^^@ \OT1/cmr/m/n/14
+.4 3\OML/cmm/m/it/14.4 x[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 x[] \OT1/cmr/m/
+n/14.4 + \OML/cmm/m/it/14.4 y[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 z[]\OT1/
+cmr/m/n/14.4 )[] \OMS/cmsy/m/n/14.4 ^^@ \OT1/cmr/m/n/14.4 3\OML/cmm/m/it/14.4 y
+[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 x[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/1
+4.4 y[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 z[]\OT1/cmr/m/n/14.4 )[] \OMS/cm
+sy/m/n/14.4 ^^@ \OT1/cmr/m/n/14.4 3\OML/cmm/m/it/14.4 z[]\OT1/cmr/m/n/14.4 (\OM
+L/cmm/m/it/14.4 x[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 y[] \OT1/cmr/m/n/14.
+4 + \OML/cmm/m/it/14.4 z[]\OT1/cmr/m/n/14.4 )[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1147--1148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1151--1152
+
+ []
+
+
+Overfull \hbox (18.46559pt too wide) in paragraph at lines 1160--1161
+ [] 
+ []
+
+[47] (./GriffithsIED.aux)
 Package rerunfilecheck Info: File `GriffithsIED.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22194 strings out of 479304
- 448236 string characters out of 5869779
- 766597 words of memory out of 5000000
+ 22205 strings out of 479304
+ 448313 string characters out of 5869779
+ 776123 words of memory out of 5000000
  38910 multiletter control sequences out of 15000+600000
  409466 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1649,15 +1913,17 @@ Here is how much of TeX's memory you used:
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/symbols/msam10.pfb>
-Output written on GriffithsIED.pdf (36 pages, 154113 bytes).
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msam10.pfb>
+Output written on GriffithsIED.pdf (47 pages, 188871 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 266 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

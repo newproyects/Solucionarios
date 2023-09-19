@@ -926,26 +926,240 @@ point?
 \end{center}
 
 \newpage
+\textbf{Problem 1.13} Let $\brc$ be the separation vector from a fixed point $(x',y',z')$
+to the point $(x,y,z)$, and let $\rc$ be its length. Show that\\
+
+(a) $\nabla(\rc^2)=2\brc$.\\
+
+(b) $\nabla(1/\rc)=-\hrc/\rc^2$.\\
+
+(c) What is the general formula for $\nabla(\rc^n)$?
 
 \newpage
+\[\text{Vector de separación}\]
+
+\[\vec\rc=\vec r-\vec r'=(x-x')\hat\imath+(y-y')\hat\jmath+(z-z')\hat k\]
+
+\[\rc=\sqrt{(x-x')^2+(y-y')^2+(z-z')^2}\]\\
+
+\[\nabla(\rc^2)=\nabla\left[(x-x')^2+(y-y')^2+(z-z')^2\right]\]\\
+
+\[\nabla(\rc^2)=\frac{\partial}{\partial x}(x-x')^2\hat\imath+\frac{\partial}{\partial y}(y-y')^2\hat\jmath+\frac{\partial}{\partial z}(z-z')^2\hat k\]\\
+
+\[\nabla(\rc^2)=
+2(x-x')\hat\imath+2(y-y')\hat\jmath+2(z-z')\hat k=
+2\left[(x-x')\hat\imath+(y-y')\hat\jmath+(z-z')\hat k\right]\]\\
+
+\[\boxed{\text{1.12 (a)}\quad\nabla(\rc^2)=2\vec\rc\quad\blacksquare}\]
 
 \newpage
+\[\nabla\left(\frac{1}{\rc}\right)=\nabla\left[(x-x')^2+(y-y')^2+(z-z')^2\right]^{-\frac{1}{2}}\]\\
+
+\[\nabla\left(\frac{1}{\rc}\right)=\]
+\[\frac{\partial}{\partial x}\left[(x-x')^2+(y-y')^2+(z-z')^2\right]^{-\frac{1}{2}}\hat\imath\]
+\[+\frac{\partial}{\partial y}\left[(x-x')^2+(y-y')^2+(z-z')^2\right]^{-\frac{1}{2}}\hat\jmath\]
+\[+\frac{\partial}{\partial z}\left[(x-x')^2+(y-y')^2+(z-z')^2\right]^{-\frac{1}{2}}\hat k\]\\
+
+\[\nabla\left(\frac{1}{\rc}\right)=\]
+\[-\frac{1}{2}\left[(x-x')^2+(y-y')^2+(z-z')^2\right]^{-\frac{3}{2}}
+\left[\frac{\partial}{\partial x}(x-x')^2\hat\imath+\frac{\partial}{\partial y}(y-y')^2\hat\jmath+\frac{\partial}{\partial z}(z-z')^2\hat k\right]\]\\
+
+\[\nabla\left(\frac{1}{\rc}\right)=
+-\left[(x-x')^2+(y-y')^2+(z-z')^2\right]^{-\frac{3}{2}}
+\left[(x-x')\hat\imath+(y-y')\hat\jmath+(z-z')\hat k\right]\]\\
+
+\[\nabla\left(\frac{1}{\rc}\right)=
+-\left(\rc^2\right)^{-\frac{3}{2}}\vec\rc=
+-\frac{1}{\rc^3}\vec\rc=
+-\frac{1}{\rc^2}\frac{\vec\rc}{\rc}\]\\
+
+\[\hat\rc=\frac{\vec\rc}{\rc}\]\\
+
+\[\boxed{\text{1.13 (b)}\quad\nabla\left(\frac{1}{\rc}\right)=-\frac{\hat\rc}{\rc^2}}\]
 
 \newpage
+\[\nabla(\rc^n)=\nabla\left[(x-x')^2+(y-y')^2+(z-z')^2\right]^\frac{n}{2}\]\\
+
+\[\nabla(\rc^n)=\]
+\[\frac{\partial}{\partial x}\left[(x-x')^2+(y-y')^2+(z-z')^2\right]^\frac{n}{2}\hat\imath\]
+\[+\frac{\partial}{\partial y}\left[(x-x')^2+(y-y')^2+(z-z')^2\right]^\frac{n}{2}\hat\jmath\]
+\[+\frac{\partial}{\partial z}\left[(x-x')^2+(y-y')^2+(z-z')^2\right]^\frac{n}{2}\hat k\]\\
+
+\[\nabla(\rc^n)=\]
+\[\frac{n}{2}\left[(x-x')^2+(y-y')^2+(z-z')^2\right]^{\frac{n}{2}-1}
+\left[\frac{\partial}{\partial x}(x-x')^2\hat\imath+\frac{\partial}{\partial y}(y-y')^2\hat\jmath+\frac{\partial}{\partial z}(z-z')^2\hat k\right]\]\\
+
+\[\nabla(\rc^n)=n\left[(x-x')^2+(y-y')^2+(z-z')^2\right]^{\frac{n}{2}-1}\left[(x-x')\hat\imath+(y-y')\hat\jmath+(z-z')\hat k\right]\]\\
+
+\[\nabla(\rc^n)=n\left[(x-x')^2+(y-y')^2+(z-z')^2\right]^{\frac{1}{2}(n-2)}\left[(x-x')\hat\imath+(y-y')\hat\jmath+(z-z')\hat k\right]\]\\
+
+\[\nabla(\rc^n)=n\rc^{n-2}\vec\rc=n\rc^{n-1}\frac{\vec\rc}{\rc}\]\\
+
+\[\boxed{\text{1.13 (c)}\quad\nabla(\rc^n)=n\rc^{n-1}\hat\rc}\]\\
 
 \newpage
+\textbf{Problem 1.14} Suppose that $f$ is a function of two variables ($y$ and $z$) only.
+Show that the gradient $\nabla f=(\partial f/\partial y)\vb{\hat y}+(\partial f/\partial z)\vb{\hat z}$ transforms as a vector
+under rotations. Eq. 1.29. [\textit{Hint:}
+  $(\partial f/\partial\bar y)=(\partial f/\partial y)(\partial y/\partial\bar y)+(\partial f/\partial z)(\partial z/\partial\bar y)$
+  , and the analogous formula for $\partial f/\partial\bar z$. We know that $\bar y=y\cos\phi+z\sin\phi$
+  and $\bar z=-y\sin\phi+z\cos\phi$; ``solve'' these equations for $y$ and $z$ (as functions
+  of $\bar y$ and $\bar z$), and compute the needed derivatives $\partial y/\partial\bar y$, $\partial z/\partial\bar y$, etc.]
 
 \newpage
+\[\text{Ecuación 1.29}\]
+
+\[
+\begin{pmatrix}
+  \mybar{0.6}{3pt}{A_x}\\
+  \mybar{0.6}{3pt}{A_z}
+\end{pmatrix}=
+\begin{pmatrix}
+  \cos\phi & \sin\phi\\
+  -\sin\phi & \cos\phi
+\end{pmatrix}
+\begin{pmatrix}
+  A_x\\
+  A_z
+\end{pmatrix}\]\\
+
+\[\bar y=y\cos\phi+z\sin\phi\quad,\quad
+\bar z=-y\sin\phi+z\cos\phi\]\\
+
+\[\bar y\cos\phi=y\cos^2\phi+z\cos\phi\sin\phi\]
+
+\[\bar z\sin\phi=-y\sin^2\phi+z\cos\phi\sin\phi\]
+
+\[\therefore\quad y=\bar y\cos\phi-\bar z\sin\phi\]
+
+\[\frac{\partial y}{\partial\bar y}=\cos\phi\quad,\quad\frac{\partial y}{\partial\bar z}=-\sin\phi\]\\
+
+\[\bar y\sin\phi=y\cos\phi\sin\phi+z\sin^2\phi\]
+
+\[\bar z\cos\phi=-y\cos\phi\sin\phi+z\cos^2\phi\]
+
+\[\therefore\quad z=\bar y\sin\phi+\bar z\cos\phi\]
+
+\[\frac{\partial z}{\partial\bar y}=\sin\phi\quad,\quad\frac{\partial z}{\partial\bar z}=\cos\phi\]\\
 
 \newpage
+\[\nabla f=\frac{\partial f}{\partial y}\hat\jmath+\frac{\partial f}{\partial z}\hat k\quad,\quad
+\nabla f=\frac{\partial f}{\partial\bar y}\bar{\hat\jmath}+\frac{\partial f}{\partial\bar z}\bar{\hat k}\]\\
+
+\[\frac{\partial f}{\partial\bar y}=\frac{\partial f}{\partial y}\frac{\partial y}{\partial\bar y}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial\bar y}
+\quad,\quad
+\frac{\partial f}{\partial\bar z}=\frac{\partial f}{\partial y}\frac{\partial y}{\partial\bar z}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial\bar z}\]\\
+
+\[\nabla f=
+\left(\frac{\partial f}{\partial y}\frac{\partial y}{\partial\bar y}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial\bar y}\right)\bar{\hat\jmath}
++\left(\frac{\partial f}{\partial y}\frac{\partial y}{\partial\bar z}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial\bar z}\right)\bar{\hat k}\]\\
+
+\[\nabla f=
+\left(\frac{\partial f}{\partial y}\cos\phi+\frac{\partial f}{\partial z}\sin\phi\right)\bar{\hat\jmath}
++\left(-\frac{\partial f}{\partial y}\sin\phi+\frac{\partial f}{\partial z}\cos\phi\right)\bar{\hat k}\]\\
+
+\[\therefore\]
+
+\[(\nabla f)_{\bar y}=(\nabla f)_y\cos\phi+(\nabla f)_z\sin\phi\]
+
+\[(\nabla f)_{\bar z}=-(\nabla f)_y\sin\phi+(\nabla f)_z\cos\phi\]\\
+
+\[\boxed{
+  \text{1.14}\quad
+  \begin{pmatrix}
+    (\nabla f)_{\bar y}\\
+    (\nabla f)_{\bar z}
+  \end{pmatrix}=
+  \begin{pmatrix}
+    \cos\phi & \sin\phi\\
+    -\sin\phi & \cos\phi
+  \end{pmatrix}
+  \begin{pmatrix}
+    (\nabla f)_y\\
+    (\nabla f)_z
+  \end{pmatrix}
+  \quad\blacksquare
+}\]
 
 \newpage
+\textbf{Problem 1.15} Calculate the divergence of the following vector functions:\\
+
+(a) $\vb{v}_a=x^2\vb{\hat x}+3xz^2\vb{\hat y}-2xz\vb{\hat z}$.\\
+
+(b) $\vb{v}_b=xy\vb{\hat x}+2yz\vb{\hat y}+3zx\vb{\hat z}$.\\
+
+(c) $\vb{v}_c=y^2\vb{\hat x}+(2xy+z^2)\vb{\hat y}+2yz\vb{\hat z}$.
 
 \newpage
+\[\text{Divergencia de una función}\]
+
+\[\nabla\cdot\vec v(x,y,z)=\frac{\partial v_x}{\partial x}+\frac{\partial v_y}{\partial y}+\frac{\partial v_z}{\partial z}\]\\
+
+\[\vec v_a=x^2\hat\imath+3xz^2\hat\jmath-2xz\hat k\quad\to\quad
+\frac{\partial v_x}{\partial x}=2x\quad,\quad
+\frac{\partial v_y}{\partial y}=0\quad,\quad
+\frac{\partial v_z}{\partial z}=-2x\]
+
+\[\boxed{\text{1.15 (a)}\quad\nabla\cdot\vec v_a=0}\]\\
+
+\[\vec v_b=xy\hat\imath+2yz\hat\jmath+3zx\hat k\quad\to\quad
+\frac{\partial v_x}{\partial x}=y\quad,\quad
+\frac{\partial v_y}{\partial y}=z\quad,\quad
+\frac{\partial v_z}{\partial z}=x\]
+
+\[\boxed{\text{1.15 (b)}\quad\nabla\cdot\vec v_b=x+2y+3z}\]\\
+
+\[\vec v_c=y^2\hat\imath+(2xy+z^2)\hat\jmath+2yz\hat k\quad\to\quad
+\frac{\partial v_x}{\partial x}=0\quad,\quad
+\frac{\partial v_y}{\partial y}=2x\quad,\quad
+\frac{\partial v_z}{\partial z}=2y\]
+
+\[\boxed{\text{1.15 (c)}\quad\nabla\cdot\vec v_c=2(x+y)}\]
 
 \newpage
+\textbf{Problem 1.16} Sketch the vector function
+
+\[\vb{v}=\frac{\vb{\hat r}}{r^2},\]
+
+and compute its divergence. The answer may surprise you...can you explain
+it?
 
 \newpage
+\[\text{Vector de posición}\]
+
+\[\hat r=\frac{x\hat\imath+y\hat\jmath+x\hat k}{\sqrt{x^2+y^2+z^2}}\quad,\quad
+r=\sqrt{x^2+y^2+z^2}\]\\
+
+\[\vec v=
+\frac{\hat r}{r^2}=
+\frac{\vec r}{r^3}=
+\frac{x\hat\imath+y\hat\jmath+x\hat k}{(x^2+y^2+z^2)^\frac{3}{2}}\]\\
+
+\[\nabla\cdot\vec v=
+\frac{\partial}{\partial x}\left[x(x^2+y^2+z^2)^{-\frac{3}{2}}\right]
++\frac{\partial}{\partial y}\left[y(x^2+y^2+z^2)^{-\frac{3}{2}}\right]
++\frac{\partial}{\partial z}\left[z(x^2+y^2+z^2)^{-\frac{3}{2}}\right]\]\\
+
+\[\frac{\partial}{\partial x}\left[x(x^2+y^2+z^2)^{-\frac{3}{2}}\right]=
+(x^2+y^2+z^2)^{-\frac{3}{2}}-3x^2(x^2+y^2+z^2)^{-\frac{5}{2}}\]\\
+
+\[\therefore\quad\nabla\cdot\vec v=
+3(x^2+y^2+z^2)^{-\frac{3}{2}}-3x^2(x^2+y^2+z^2)^{-\frac{5}{2}}-3y^2(x^2+y^2+z^2)^{-\frac{5}{2}}-3z^2(x^2+y^2+z^2)^{-\frac{5}{2}}\]\\
+
+\[\nabla\cdot\vec v=3(x^2+y^2+z^2)^{-\frac{3}{2}}-3(x^2+y^2+z^2)(x^2+y^2+z^2)^{-\frac{5}{2}}\]
+
+\[\nabla\cdot\vec v=0\]\\
+
+\begin{center}
+  \fbox{\begin{minipage}{17cm}
+      1.16
+      \[\nabla\cdot\vec v=0\quad:\quad\vec v=\frac{\hat r}{r^2}\]
+      La divergencia en todo el espacio es $\nabla\cdot\vec v=0$, con excepción del origen que es
+      una ``fuente'', en el origen la función no esta definida, por lo que $\nabla\cdot\vec v$ tiende a
+      infinito.
+      \end{minipage}}
+\end{center}
+
 
 \newpage
 
